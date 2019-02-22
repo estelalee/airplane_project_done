@@ -2,10 +2,12 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #464646;
   /*無法在定義全文字顏色後改變hover顏色*/
 }
+
 * a:hover {
   color: #217484;
   font-weight: 500;
@@ -23,20 +25,31 @@
 }
 
 .function-container__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding: 10px 0;
 }
 
 .function-container__ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .function-container__ul li {
   margin-left: 20px;
   font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
 }
 
@@ -56,29 +69,44 @@
 }
 
 .menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   padding: 10px;
 }
 
 .menu-container__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .menu-container__content {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .menu-container__content li {
   padding: 0 40px;
   border-right: 1px #464646 solid;
 }
+
 .menu-container__content a {
   text-decoration: none;
   color: black;
 }
+
 .menu-container__content a:hover {
   color: #217484;
 }
@@ -95,25 +123,38 @@
 }
 
 .booking_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 50px;
   font-size: 2em;
   color: #217484;
 }
 
 .booking_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   list-style: none;
 }
+
 .booking_block li {
   margin-right: 50px;
 }
 
 .airport_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .airport {
@@ -124,18 +165,27 @@
 }
 
 .date_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.date_block input[type=date] {
+
+.date_block input[type="date"] {
   width: 45%;
   height: 40px;
   margin-top: 60px;
 }
 
 .member_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .member {
@@ -150,13 +200,18 @@ button {
   font-size: 1.5rem;
   margin-top: 60px;
   border-radius: 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#217484), to(#0b4e5b));
   background: linear-gradient(#217484, #0b4e5b);
   color: white;
 }
 
 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .carousel {
@@ -184,8 +239,12 @@ button {
 }
 
 .explore__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 70px 0 50px 0;
   font-size: 2em;
   color: #217484;
@@ -198,8 +257,12 @@ button {
 
 .explore__content ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .explore__area {
@@ -225,12 +288,15 @@ button {
 }
 
 .explore__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 span {
   font-size: 14px;
 }
-
 /*# sourceMappingURL=style.css.map */
