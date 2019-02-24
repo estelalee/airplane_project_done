@@ -1,18 +1,13 @@
-.content_container2 {
+.booking {
     background-color: #f2f2f2;
 
 }
 
-.booking {
+.booking__content {
     // TODO: 如果使用了max-width就不適合用百分比當單位
-    max-width: 55%;
-    // border: 1px black solid;
+    max-width: 1100px;
     margin: 0 auto;
-
-    // TODO: 3 - 訂位購票跟slideshow之間有一個神秘的空間
-    // ↓在這裡
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding: 70px 0;
 }
 
 .booking_title {
@@ -23,74 +18,62 @@
     color: $brandcolor
 }
 
-.booking_block {
+ul {
+    list-style: none;
     display: flex;
     justify-content: flex-start;
-    
-    list-style: none;
-
-    li {
-        margin-right: 50px;
-    }
 }
 
-// .airport_title{
-//     display: flex;
-//     justify-content: space-between;
-// }
+li {
+    font-size: 18px;
+    margin-right: 5%;
+}
 
-.airport_block {
+.airport__block{
     display: flex;
     justify-content: space-between;
 }
 
+
 .airport {
     width: 45%;
     height: 40px;
-    // TODO: 這個margin-top應該是整個flex box和相鄰的flex box的間距，
-    // 因此邏輯上來說應該要下在.airport_block裡面。下面同理
-    margin-top: 60px;
-
-    // TODO: .airport已經是flex的子元素了，因此這個樣式是無效的
-    display: inline-block;
-
 }
 
 .date_block {
     display: flex;
     justify-content: space-between;
 
-    // TODO: 選擇器不是用得很溜嗎，當初還在幹話說聽不懂
     input[type="date"] {
         width: 45%;
         height: 40px;
-        margin-top: 60px;
+        // margin-top: 60px;
     }
 }
 
-.member_block{
+.member_block {
     display: flex;
     justify-content: space-between;
 }
 
-.member{
-    width:30%;
-    height:40px;
-    margin-top:60px;
+.member {
+    width: 30%;
+    height: 40px;
+    // margin-top: 60px;
 }
 
-button{
-    width:30%;
-    height:50px;
+button {
+    width: 30%;
+    height: 50px;
     font-size: 1.5rem;
-    margin-top:60px;
+    margin-top: 60px;
     border-radius: 5px;
-    background: linear-gradient(#217484,#0b4e5b);
-    color:white;
+    background: linear-gradient(#217484, #0b4e5b);
+    color: white;
 }
 
-.button{
+.button {
     display: flex;
     justify-content: center;
-    
+
 }

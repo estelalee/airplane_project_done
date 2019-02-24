@@ -74,7 +74,6 @@
     </div>
 
 
-    <!-- slideshow，不同尺寸的圖就會崩壞 -->
     <!-- TODO:  slick的每一個滑動夜的高度都是按照內容元素決定的
     所以如果只有圖片、而圖片的長寬還不同的話，解決的辦法是每個滑動頁都做成固定大小的div，並把圖片設成那個div的background -->
 
@@ -91,8 +90,6 @@
     </div>
 
 
-    <!-- 訂位購票，無法加上每個input box的title -->
-
     <!-- TODO: 每一組label和input都做成一個div，並且下flex讓裡面垂直排列就好 -->
     <!-- <div style="display: flex; flex-direction: column">
         <label for="">出發地</label>
@@ -102,33 +99,22 @@
     </div> -->
 
 
-    <div class="content_container2">
-        <div class="booking">
-            <div class="booking_title">
-                <span>訂位購票</span>
-            </div>
-            <div>
-                <ul class="booking_block">
-                    <a>
-                        <li><input type="radio" name="ticket" id="one-way" value="one-way"><label for="one-way">單程</label></li>
-                    </a>
-                    <a>
-                        <li><input type="radio" name="ticket" id="round-trip" value="round-trip"><label for="round-trip">往返</label></li>
-                    </a>
-                    <a>
-                        <li><span class="open-jaw"><u>不同點進出/中途停留/多個城市</u></span></li>
-                    </a>
+    <div class="booking">
+        <div class="booking__content">
+            <p class="booking_title">訂位購票</p>
+            <div class="booking_block">
+                <ul>
+                    <li>
+                        <input type="radio" name="ticket" id="one-way" value="one-way"><label for="one-way"><span>單程</span></label>
+                    </li>
+                    <li><input type="radio" name="ticket" id="round-trip" value="round-trip"><label for="round-trip"><span>往返</span></label></li>
+                    <li><span class="open-jaw">不同點進出/中途停留/多個城市</span></li>
                 </ul>
             </div>
 
-            <!-- <div class="airport_title">
-                <h4>出發地</h4>
-                <h4>目的地</h4>
-            </div> -->
 
-
-            <div class="airport_block">
-                <div class="">
+            <div class="airport__block">
+                <div class="airport__block1">
                     <h4>出發地</h4>
                     <select class="airport">
                         <option value="0"> - </option>
@@ -144,7 +130,7 @@
                         </optgroup>
                     </select>
                 </div>
-                <div>
+                <div class="airport__block2">
                     <h4>目的地</h4>
                     <select class="airport">
                         <option value="0"> - </option>
@@ -162,47 +148,59 @@
                         </optgroup>
                     </select>
                 </div>
-
             </div>
 
             <div class="date_block">
-                <!-- <h4>去程日期</h4> -->
-                <input type="date" name="outbound" id="">
-                <!-- <h4>回程日期</h4> -->
-                <input type="date" name="inbound" id="">
+                <div>
+                    <h4>去程日期</h4>
+                    <input type="date" name="outbound" id="">
+                </div>
+                <div>
+                    <h4>回程日期</h4>
+                    <input type="date" name="inbound" id="">
+                </div>
+
             </div>
 
             <div class="member_block">
-                <select class="member">
-                    <!-- <h4>大人(12歲以上)</h4> -->
-                    <option value="0"> - </option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                </select>
-                <select class="member">
-                    <!-- <h4>兒童(2-11歲)</h4> -->
-                    <option value="0"> - </option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                </select>
-                <select class="member">
-                    <!-- <h4>嬰兒(2歲以下)</h4> -->
-                    <option value="0"> - </option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                </select>
+                <div>
+                    <h4>大人(12歲以上)</h4>
+                    <select class="member">
+                        <option value="0"> - </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div>
+                    <h4>兒童(2-11歲)</h4>
+                    <select class="member">
+                        <option value="0"> - </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+                <div>
+                    <h4>嬰兒(2歲以下)</h4>
+                    <select class="member">
+                        <option value="0"> - </option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                    </select>
+                </div>
+
+
             </div>
 
             <div class="button">
@@ -218,6 +216,8 @@
 
     <div class="explore">
         <div class="explore__content">
+
+
             <p class="explore__title">深入探索</p>
             <div class="explore__selectors">
                 <ul>
@@ -231,6 +231,8 @@
                     <li class="explore__last">紐澳</li>
                 </ul>
             </div>
+
+
             <div class="explore__slide">
                 <div>
                     <div class="explore__block">
@@ -256,6 +258,8 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div>
                     <div class="explore__block">
                         <img src="./src/assets_index_2019-01-06/p-2.png" alt="">
@@ -455,6 +459,87 @@
 
     </div>
 
+
+    <!--instruction-->
+
+    <div class="instruction">
+        <p class="instruction__title">旅程準備</p>
+        <div class="instruction__container">
+            <div class="instruction__content">
+                <img src="./src/assets_index_2019-01-06/p-7.png" alt="">
+                <p>行李須知</p>
+                <div class="instruction__text__underline"></div>
+                <ul>
+                    <li>行李規定</li>
+                    <li>隨身行李</li>
+                    <li>危險品須知</li>
+                    <li>報值行李</li>
+                    <li>遺失與損壞行李</li>
+                    <li class="more">更多</li>
+                </ul>
+            </div>
+            <div class="instruction__content">
+                <img src="./src/assets_index_2019-01-06/p-8.png" alt="">
+                <p>出入境須知</p>
+                <div class="instruction__text__underline"></div>
+                <ul>
+                    <li>特殊需求</li>
+                    <li>簽證須知</li>
+                    <li class="more">更多</li>
+                </ul>
+            </div>
+            <div class="instruction__content">
+                <img src="./src/assets_index_2019-01-06/p-9.png" alt="">
+                <p>各地機場規定</p>
+                <div class="instruction__text__underline"></div>
+                <ul>
+                    <li>美國</li>
+                    <li>加拿大</li>
+                    <li>倫敦（英國）</li>
+                    <li>香港、澳門</li>
+                    <li>大陸地區</li>
+                    <li class="more">更多</li>
+                </ul>
+            </div>
+            <div class="instruction__content">
+                <img src="./src/assets_index_2019-01-06/p-10.png" alt="">
+                <p>特殊服務需求</p>
+                <div class="instruction__text__underline"></div>
+                <ul>
+                    <li>機場協助</li>
+                    <li>機上服務</li>
+                    <li>身心障礙設備洗手間</li>
+                    <li>特別餐點</li>
+                    <li>預定輪椅/輪椅托運</li>
+                    <li class="more">更多</li>
+                </ul>
+            </div>
+            <!-- <div class="instruction__content">
+                <img src="https://picsum.photos/240/180" alt="">
+                <p>行李須知</p>
+                <div class="instruction__text__underline"></div>
+                <ul>
+                    <li>行李規定</li>
+                    <li>隨身行李</li>
+                    <li>危險品須知</li>
+                    <li>報值行李</li>
+                    <li>遺失與損壞行李</li>
+                    <li class="more">更多</li>
+                </ul>
+            </div>
+            <div class="instruction__content">
+                <img src="https://picsum.photos/240/180" alt="">
+                <p>出入境須知</p>
+                <div class="instruction__text__underline"></div>
+                <ul>
+                    <li>特殊需求</li>
+                    <li>簽證須知</li>
+                    <li class="more">更多</li>
+                </ul>
+            </div> -->
+        </div>
+
+    </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

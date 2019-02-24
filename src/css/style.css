@@ -2,15 +2,12 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   color: #464646;
   /*無法在定義全文字顏色後改變hover顏色*/
 }
-
-* a:hover {
+* li:hover, * span:hover {
   color: #217484;
-  font-weight: 500;
   cursor: pointer;
 }
 
@@ -25,31 +22,20 @@
 }
 
 .function-container__bar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
   padding: 10px 0;
 }
 
 .function-container__ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .function-container__ul li {
   margin-left: 20px;
   font-size: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   position: relative;
 }
 
@@ -69,129 +55,88 @@
 }
 
 .menu-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
   padding: 10px;
 }
 
 .menu-container__logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .menu-container__content {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .menu-container__content li {
   padding: 0 40px;
   border-right: 1px #464646 solid;
 }
-
 .menu-container__content a {
   text-decoration: none;
-  color: black;
 }
-
 .menu-container__content a:hover {
   color: #217484;
 }
 
-.content_container2 {
+.booking {
   background-color: #f2f2f2;
 }
 
-.booking {
-  max-width: 55%;
+.booking__content {
+  max-width: 1100px;
   margin: 0 auto;
-  padding-top: 70px;
-  padding-bottom: 70px;
+  padding: 70px 0;
 }
 
 .booking_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin-bottom: 50px;
   font-size: 2em;
   color: #217484;
 }
 
-.booking_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+ul {
   list-style: none;
-}
-
-.booking_block li {
-  margin-right: 50px;
-}
-
-.airport_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: flex-start;
+}
+
+li {
+  font-size: 18px;
+  margin-right: 5%;
+}
+
+.airport__block {
+  display: flex;
+  justify-content: space-between;
 }
 
 .airport {
   width: 45%;
   height: 40px;
-  margin-top: 60px;
-  display: inline-block;
 }
 
 .date_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
-.date_block input[type="date"] {
+.date_block input[type=date] {
   width: 45%;
   height: 40px;
-  margin-top: 60px;
 }
 
 .member_block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .member {
   width: 30%;
   height: 40px;
-  margin-top: 60px;
 }
 
 button {
@@ -200,18 +145,13 @@ button {
   font-size: 1.5rem;
   margin-top: 60px;
   border-radius: 5px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#217484), to(#0b4e5b));
   background: linear-gradient(#217484, #0b4e5b);
   color: white;
 }
 
 .button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .carousel {
@@ -238,31 +178,27 @@ button {
   background-size: cover;
 }
 
+.explore {
+  margin-bottom: 70px;
+}
+
 .explore__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   margin: 70px 0 50px 0;
   font-size: 2em;
   color: #217484;
 }
 
 .explore__content {
-  width: 55%;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .explore__content ul {
   list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .explore__area {
@@ -288,15 +224,60 @@ button {
 }
 
 .explore__slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 span {
   font-size: 14px;
 }
+
+.instruction {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+
+.instruction__title {
+  display: flex;
+  justify-content: center;
+  padding: 70px 0 50px 0;
+  font-size: 2em;
+  color: #217484;
+}
+
+.instruction__container {
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.instruction__content {
+  text-align: center;
+}
+.instruction__content li {
+  list-style: none;
+}
+.instruction__content p {
+  font-size: 18px;
+  padding: 15px 0;
+}
+.instruction__content li {
+  font-size: 14px;
+  padding: 10px 0;
+}
+
+.instruction__text__underline {
+  width: 40px;
+  height: 2px;
+  background-color: #464646;
+  position: relative;
+  left: 42%;
+}
+
+.more {
+  text-decoration: underline #464646;
+}
+
 /*# sourceMappingURL=style.css.map */

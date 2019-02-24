@@ -22,7 +22,6 @@
     list-style: none;
     display: flex;
 
-
     li {
         margin-left: 20px;
         font-size: $font-size-small;
@@ -30,6 +29,7 @@
         align-items: center;
         position: relative;
         // border: 1px black solid;
+
     }
 
 }
@@ -78,7 +78,6 @@
 
     a {
         text-decoration: none;
-        color: black;
 
         &:hover {
             color: $brandcolor;
