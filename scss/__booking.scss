@@ -10,24 +10,26 @@
     padding: 70px 0;
 }
 
-.booking_title {
+.booking__title {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
     font-size: 2em;
     color: $brandcolor
 }
-
-ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-start;
+.booking__block{
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+    }
+    
+    li {
+        font-size: 18px;
+        margin-right: 5%;
+    }
 }
 
-li {
-    font-size: 18px;
-    margin-right: 5%;
-}
 
 .airport__block{
     display: flex;
