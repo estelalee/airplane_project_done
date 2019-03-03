@@ -1,28 +1,55 @@
 .carousel {
     width: 100%;
-
 }
 
 .carousel div {
     width: 100%;
     height: 500px;
 
-}
-
-.carousel div:nth-of-type(1) {
-    // background-color: red;
-    background: url(/src/assets_index_2019-01-06/slideshow.png);
-    
-}
-
-.carousel div:nth-of-type(2) {
-    background: url(https://picsum.photos/1920/900);
-    background-position: 50% 50%;
+    img {
+        object-fit: cover;
+    }
 
 }
 
-.carousel div:nth-of-type(3) {
-    background: url(https://picsum.photos/1000/500);
-    background-position: 50% 50%;
-    background-size: cover;
+// .carousel div:nth-of-type(1) {
+//     // background: url(/src/assets_index_2019-01-06/slideshow.png);
+//     background: url(/src/assets_index_2019-01-06/slideshow.png);
+//     // background-size: auto;
+// }
+
+// .carousel div:nth-of-type(2) {
+//     // background: url(https://picsum.photos/1920/900);
+//     background-position: 50% 50%;
+//     background: url(/src/assets_index_2019-01-06/slideshow__2.jpg);
+//     background-size: cover;
+// }
+
+// .carousel div:nth-of-type(3) {
+//     // background: url(https://picsum.photos/1000/500);
+//     // background-position: 50% 50%;
+//     // background-size: cover;
+//     background: url(/src/assets_index_2019-01-06/slideshow__3.jpg);
+//     background-size: cover;
+// }
+
+@media screen and (max-width:1200px) {
+    .carousel div {
+        width: 100%;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .carousel div {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .carousel div {
+        width: 100%;
+        height: 150px;
+    }
 }

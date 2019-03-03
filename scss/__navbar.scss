@@ -1,6 +1,6 @@
-.function-container{
+.function-container {
     // box-shadow: 20px 0 #000000;
-    border-bottom:1px #eeeeee solid;
+    border-bottom: 1px #eeeeee solid;
 }
 
 .content-container {
@@ -56,12 +56,22 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 10px;
-    // margin-top:13px;
+    padding-right: 0;
+
+    .menu__bar {
+        font-size: 30px;
+        color: $brandcolor;
+        /*為什麼不想變顏色呢*/
+        display: none;
+    }
+
+    img {
+        width: 100%;
+    }
 }
 
 .menu-container__logo {
     display: flex;
-
 }
 
 
@@ -69,7 +79,7 @@
     list-style: none;
     display: flex;
     align-items: center;
-    
+
 
     li {
         padding: 0 40px;
@@ -87,7 +97,31 @@
 }
 
 
+@media screen and (max-width:1200px) {
+    .function-container {
+        display: none;
+    }
 
+    .menu-container {
+        padding: 7px;
+        .menu__bar {
+            display: block;
+            align-items: center;
+            cursor: pointer;
+        }
+    }
+
+    .menu-container__content {
+        display: none;
+    }
+
+    .content-container {
+        height: 45px;
+        box-shadow: 0 2px #464646;
+    }
+
+
+}
 
 
 

@@ -16,20 +16,23 @@
 .explore__content{
     max-width: 1100px;
     margin: 0 auto;
-
 }
 
-.explore__content ul {
+.explore__selectors ul {
     list-style: none;
 
     display: flex;
-    justify-content: space-evenly;
-}
+    justify-content: space-between;
 
-// TODO: 為什麼.explore__last沒有設定padding呢？
-.explore__area{
-    padding: 0 44px 0 44px;
-    border-right: 1px $secondcolor solid;
+    li{
+        width: 50%;
+        text-align: center;
+        border-right: 1px $secondcolor solid;
+    }
+
+    .explore__first{
+        border-left: 1px $secondcolor solid;
+    }
 }
 
 
@@ -37,17 +40,14 @@
 // 一旦發生便會造成破版。
 // 這邊其實可以不規定.explore__block的寬度，只規定外層的.explore__content寬度。slick會自動縮放寬度到能容納三組內容為止
 .explore__block{
-    width: 320px;
     padding-top: 50px;
-    // img{
-    //     width:300px;
-    // }
 }
 
 .explore__block__text{
     padding-top: 20px;
     text-align: center;
     font-size: 18px;
+    width: 320px;
     
 }
 
