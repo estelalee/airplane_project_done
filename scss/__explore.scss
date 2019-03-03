@@ -1,11 +1,12 @@
-.explore{
-    margin-bottom: 70px;
+.explore {
+    // margin-bottom: 70px;
+    margin: 0 20px;
 }
 
 .explore__title {
     display: flex;
     justify-content: center;
-    margin:70px 0 50px 0;
+    margin: 70px 0 50px 0;
     font-size: 2em;
     color: $brandcolor
 }
@@ -13,9 +14,25 @@
 // TODO: 這邊使用width: 55%會跟下面的.explore__block{ width: 320px; }衝突到。
 // 由於slick設定一次會顯示3組內容，因此整個.explore__content最少寬度不得少於960px
 // 但現在，當頁面縮放到一定程度時，width: 55%的寬度會開始小於960px
-.explore__content{
+.explore__content {
     max-width: 1100px;
     margin: 0 auto;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.explore__arrow__prev {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+    cursor: pointer;
+}
+
+.explore__arrow__next {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+    cursor: pointer;
 }
 
 .explore__selectors ul {
@@ -24,13 +41,13 @@
     display: flex;
     justify-content: space-between;
 
-    li{
+    li {
         width: 50%;
         text-align: center;
         border-right: 1px $secondcolor solid;
     }
 
-    .explore__first{
+    .explore__first {
         border-left: 1px $secondcolor solid;
     }
 }
@@ -39,32 +56,60 @@
 // TODO: 如同上面提到的，當頁面縮放到一定寬度時，父元素會無法容納三個.explore__block共960px的寬度
 // 一旦發生便會造成破版。
 // 這邊其實可以不規定.explore__block的寬度，只規定外層的.explore__content寬度。slick會自動縮放寬度到能容納三組內容為止
-.explore__block{
+.explore__block {
     padding-top: 50px;
 }
 
-.explore__block__text{
+.explore__block__text {
     padding-top: 20px;
     text-align: center;
     font-size: 18px;
     width: 320px;
-    
+
+    // :nth-last-child(1) {
+    //     display: block; // 如果不是區塊元素的話，要加這一行
+    //     overflow: hidden;
+    //     display: -webkit-box;
+    //     -webkit-box-orient: vertical;
+    //     -webkit-line-clamp: 3; // N 填入要顯示的行數
+    //     line-height: 20px; // X 填入行高 px 值
+    //     height: 20px * 3; // 限定高度為 X * N 的 px 值
+    // }
 }
 
-.explore__block__text :nth-last-child(1){
+.explore__block__text :nth-last-child(1) {
     padding-top: 20px;
     text-align: left;
     font-size: 14px;
 }
 
-.explore__slide{
+.explore__slide {
     display: flex;
     justify-content: space-between;
-
 }
+
 
 // TODO: 這邊只下span{}會變成全域設定，若以後在別的地方使用到span就會不小心套用到這個設定
 // 若真的要做成全域設定，請把樣式放在base.scss裡面；或是在這邊使用.explore__block__text span{}來代替使用span{}
-span{
+span {
     font-size: 14px;
 }
+
+// .explore__selectorsII {
+//     display: none;
+//     max-width: 1100px;
+
+//     div {
+//         width: 100%;
+//     }
+// }
+
+// @media screen and (max-width:800px) {
+//     .explore__selectors {
+//         display: none;
+//     }
+
+//     .explore__selectorsII {
+//         display: inline;
+//     }
+// }
