@@ -45,10 +45,13 @@ $('.explore__slide').slick({
 });
 
 
-$('.insrtuction__container').slick({
+$('.instruction__container').slick({
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
-    arrows: false,
-    autoplay: true,
+    arrows: true,
+    autoplay: false,
+
+    prevArrow: ".instruction__arrow__prev",
+    nextArrow: ".instruction__arrow__next",
 });

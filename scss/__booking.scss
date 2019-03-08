@@ -84,7 +84,7 @@ input[type="date"] {
     margin-top: 10px;
 }
 
-button {
+.booking__button-btn {
     width: 30%;
     height: 50px;
     font-size: 1.5rem;
@@ -95,9 +95,10 @@ button {
 }
 
 
-.button {
+.booking__button {
     display: flex;
     justify-content: center;
+
 }
 
 @media screen and (max-width:1200px) {
@@ -127,9 +128,9 @@ button {
         margin-top: 10px;
     }
 
-    button{
+    .booking__button-btn{
         width: 35%;
-        height: 45px;
+        height: 3rem;
         font-size: 1.3rem;
     }
 
@@ -143,9 +144,8 @@ button {
         height: 35px;
     }
 
-    button{
-        width: 40%;
-        height: 40px;
+    .booking__button-btn{
+        width: 100%;
         font-size: 1.2rem;
     }
 }
@@ -173,8 +173,9 @@ button {
         width: 100%;
     }
 
-    button{
-        width: 50%;
-        font-size: 1.2rem;
-    }
+    // .booking__button-btn{
+    //     width: 100%;
+    //     // height: 3rem;
+    //     font-size: 1.2rem;
+    // }
 }
