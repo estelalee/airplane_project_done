@@ -97,6 +97,7 @@ input[type="text"] {
     display: flex;
     justify-content: center;
     height: 50px;
+    align-items: center;
 
 }
 
@@ -104,7 +105,7 @@ input[type="text"] {
     width: 25%;
     height: 30px;
     font-size: 1rem;
-    margin-top: 30px;
+    // margin-top: 30px;
     border-radius: 5px;
     background: linear-gradient(#217484, #0b4e5b);
     color: white;
@@ -123,7 +124,7 @@ input[type="text"] {
     }
 }
 
-.footer__info__textII {
+.footer__info__textII, {
     display: none;
 
     ul {
@@ -143,6 +144,7 @@ input[type="text"] {
     background-color: $brandcolor;
 }
 
+
 .fa-plus {
     font-size: 10px;
     padding-left: 10px;
@@ -153,7 +155,6 @@ input[type="text"] {
     .footer__info__text {
         display: none;
     }
-
     .footer__info__textII {
         display: flex;
     }

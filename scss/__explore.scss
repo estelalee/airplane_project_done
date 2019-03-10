@@ -3,6 +3,16 @@
     margin: 0 20px;
 }
 
+.explore__container{
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+.explore__selectors__block{
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
 .explore__title {
     display: flex;
     justify-content: center;
@@ -11,11 +21,8 @@
     color: $brandcolor
 }
 
-// TODO: 這邊使用width: 55%會跟下面的.explore__block{ width: 320px; }衝突到。
-// 由於slick設定一次會顯示3組內容，因此整個.explore__content最少寬度不得少於960px
-// 但現在，當頁面縮放到一定程度時，width: 55%的寬度會開始小於960px
 .explore__content {
-    max-width: 1100px;
+    max-width: 1120px;
     margin: 0 auto;
     position: relative;
     margin-bottom: 70px;
@@ -41,6 +48,8 @@
     display: flex;
     justify-content: space-between;
 
+    margin: 0 10px;
+
     li {
         width: 50%;
         text-align: center;
@@ -52,19 +61,16 @@
     }
 }
 
-
-// TODO: 如同上面提到的，當頁面縮放到一定寬度時，父元素會無法容納三個.explore__block共960px的寬度
-// 一旦發生便會造成破版。
-// 這邊其實可以不規定.explore__block的寬度，只規定外層的.explore__content寬度。slick會自動縮放寬度到能容納三組內容為止
 .explore__block {
     padding-top: 50px;
+    margin: 0 10px;
 }
 
 .explore__block__text {
     padding-top: 20px;
     text-align: center;
     font-size: 18px;
-    width: 320px;
+    // width: 320px;
 
     // :nth-last-child(1) {
     //     display: block; // 如果不是區塊元素的話，要加這一行
@@ -95,21 +101,24 @@ span {
     font-size: 14px;
 }
 
-// .explore__selectorsII {
-//     display: none;
-//     max-width: 1100px;
+@media screen and (max-width:800px) {
+    .explore__selectors ul {
+        flex-direction: column;
+     
+        .explore__first,li{
+            border: none;
+            width: 100%;
+        }
 
-//     div {
-//         width: 100%;
-//     }
-// }
+        .explore__area{
+            border-bottom: 1px $secondcolor solid;
+            padding: 5px 0;
+        }
+    }
 
-// @media screen and (max-width:800px) {
-//     .explore__selectors {
-//         display: none;
-//     }
+    .explore__selectors{
+        display: flex;
+        justify-content: center;
+    }
 
-//     .explore__selectorsII {
-//         display: inline;
-//     }
-// }
+}

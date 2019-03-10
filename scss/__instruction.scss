@@ -11,8 +11,35 @@
     color: $brandcolor
 }
 
+.instruction__content__block{
+    max-width: 1120px;
+    margin: 0 auto;
+    // padding: 0 10px;
+    // border: 1px black solid;
+    position: relative;
+}
+
+// .instruction__arrow__block{
+//     display: flex;
+//     justify-content: space-between;
+//     max-width: 1180px;
+//     margin: 0 auto;
+//     // position: relative;
+// }
+
+// .instruction__arrow__prev{
+//     // position: absolute;
+//     top: 50%;
+
+// }
+
+// .instruction__arrow__next{
+//     // position: absolute;
+//     top: 50%;
+// }
+
 .instruction__container {
-    max-width: 1100px;
+    max-width: 1140px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -21,8 +48,9 @@
 }
 
 .instruction__content{
-    width: 1100px;
+    max-width: 1140px;
     margin: 0 auto;
+    padding: 0 10px;
     // border: 1px black solid;
     position: relative;
 
